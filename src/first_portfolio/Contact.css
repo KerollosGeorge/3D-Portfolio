@@ -1,0 +1,61 @@
+.f_contact{
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.leftcontact{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.leftcontact p{
+    font-size: 35px;
+    color: rgb(215, 215, 215);
+    font-weight: 300;
+    align-self: center;
+}
+.fcontactform{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+}
+.fcontactform input{
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.fcontactform textarea{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    resize: vertical;
+    max-height: 300px;
+}
+.fcontactform button{
+    height: 40px;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgb(226, 16, 226);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.frightcontact{
+    width: 40%;
+    margin-top: 5%;
+}
+path {
+    fill: #a591be;
+  }

@@ -1,0 +1,116 @@
+.f_works{
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left_work{
+    transition: .3s ease all;
+    width: 35%;
+    list-style: none;
+    padding: 0;
+}
+.left_work li{
+    width: 400px;
+    margin: 10px;
+    font-size: 55px;
+    font-weight: bold;
+    cursor: pointer;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background-color: transparent;
+}
+.left_work li:hover{
+    white-space: nowrap;
+    background-clip: text;
+    background-color: rgb(132, 0, 255);
+    animation: Textanimate linear 1s;
+ 
+}
+@keyframes Textanimate {
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 50%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.right_work{
+    height: 55%;
+    width: 40%;
+    position: relative; 
+}
+.p_d{
+    margin-top: -50px;
+    height: 50%;
+}
+.p_d p{
+    position: absolute;
+    width: 200px;
+    padding: 10px;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    color: black;
+    font-size: 14;
+    font-weight: 300;
+    border-radius: 5px;
+} 
+.phone{
+    margin-bottom:50px ;
+}
+@media (width <= 1020px){
+    .left_work li{
+        font-size: 45px;
+    }
+}
+@media (width <= 800px){
+    .f_works{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        gap: 50px;
+    }
+    .left_work{
+        width: 40%;
+        list-style: none;
+        height: 20%;
+    }
+    .left_work li{
+        margin: 5px;
+        font-size: 35px;
+        font-weight: bold;
+        cursor: pointer;
+        color: white;
+        -webkit-text-stroke: 0px;
+    }
+    .right_work{
+        align-self: center;
+        height: 30%;
+        width: 40%;
+        position: relative;
+    }
+    .p_d{
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+    }
+    .p_d p{
+        position: absolute;
+        transform: translate(0%,-80%);
+    }
+    
+
+}

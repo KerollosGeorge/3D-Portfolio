@@ -1,0 +1,60 @@
+.f_who{
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.fwho_content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+.fwho_content h1{
+    font-size: 50px;
+    height: 90px;
+}
+.fwho_content h4{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: rgb(199, 39, 148);
+    font-size: 18px;
+    padding: 0;
+    margin-bottom: -5px;
+}
+.before_text{
+    width: 20px;
+    height: 3px;
+    background-color:#fff;
+}
+.fwho_content button{
+    width: 130px;
+    height: 35px;
+    background-color: rgb(197, 2, 135);
+    color: #fff;
+    font-size: 16px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.left_square{
+    width: 30%;
+}
+@media (width <= 810px){
+    .fwho_content{
+        width: 70%;
+        height: 60%;
+    }
+    .fwho_content h1{
+        font-size: 50px;
+        height: 60px;
+        margin-bottom: 120px;
+    }
+    .left_square {
+        display: none;
+    }
+}

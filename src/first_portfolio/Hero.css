@@ -1,0 +1,250 @@
+.f_hero{
+    width: 100%;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero_nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.f_nav{
+    width: 200px;
+    display: flex;
+    gap: 10px;
+}
+.hero_logo{
+    height:50px;
+}
+.fhero_btns{
+    transition: .3s ease all;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.fhero_btns a{
+    transition: .3s ease all;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    filter: brightness(60%);
+    transition: .3s ease all;
+}
+.fhero_btns a:hover {
+    filter: brightness(100%);
+    transition: .3s ease all;
+}
+.sec_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.shero_search{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    filter: brightness(60%);
+    transition: .3s ease all;
+}
+.shero_search:hover{
+    transition: .3s ease all;
+    transform: scale(1.1);
+    filter: brightness(100%);
+}
+.sec_nav button{
+    width: 100px;
+    height: 35px;
+    background-color: rgb(197, 2, 135);
+    color: #fff;
+    font-size: 16px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sec_nav button:hover , .fhero_content button:hover{
+    transition: .3s ease all;
+    background-color: rgb(255, 0, 191);
+}
+.fabars{
+    display: none;
+}
+.fhero_sidebar{
+    display: none;
+}
+.fhero_main{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.fhero_content{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.fhero_content h1{
+    font-size: 50px;
+    height: 90px;
+}
+.fhero_content h4{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: rgb(199, 39, 148);
+    font-size: 18px;
+    padding: 0;
+    margin-bottom: -5px;
+}
+.before_text{
+    width: 20px;
+    height: 3px;
+    background-color:#fff;
+}
+.fhero_content button{
+    width: 100px;
+    height: 35px;
+    background-color: rgb(197, 2, 135);
+    color: #fff;
+    font-size: 16px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.right_img{
+    width: 40%;
+    height:100%;
+    position: relative;
+}
+.fhero_img{
+    height: 500px;
+    position: absolute;
+    top: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: ani 2s infinite ease alternate;
+}
+@keyframes ani{
+    0%{
+        transform:translateY(0)
+    }    
+    100% {
+        transform: translateY(30px);
+    }
+}
+@media (width <= 1050px){
+    .f_hero{
+        scroll-snap-align: start;
+    }
+    .fhero_main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fhero_content{
+        width: 65%;
+    }
+    .right_img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+}
+@media only screen and (max-width:800px){
+
+    .fhero_main{
+        height: auto;
+        margin-top: 0;
+    }
+
+    .fhero_btns{
+        display: none;
+        transition: .3s ease all;
+    }
+    .fabars{
+        width: 50px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        background-color: transparent;
+        color: white;
+        border:none;
+        cursor: pointer;
+        border-radius: 3px;
+        z-index: 1000;
+        transition: .3s ease all;
+    }
+    .fabars:hover{
+        transition: .3s ease all;
+        transform: scale(1.2);
+    }
+    .fhero_sidebar{
+        width: 100%;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        align-self: flex-start;
+        
+    }
+    .fhero_sidebar_btns{
+        padding: 10px;
+        margin-left: -20px;
+        transition: .3s ease all;
+        list-style: none;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 10px;
+        gap: 10px 0px;
+    }
+    .fhero_sidebar_btns li{
+        width: 500px ;
+        padding: 5px;
+    }
+    .fhero_sidebar_btns li:hover{
+        background-color: rgb(81, 44, 91);
+        color: #fff;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    .fhero_sidebar li a{  
+        transition: .3s ease all;
+        text-decoration: none;
+        color:white;
+        cursor: pointer;
+        filter: brightness(100%);
+        transition: .3s ease all;
+        margin-left: 10px;
+    }
+    .right_img{
+        margin-top: 50px;
+        margin-bottom: 150px;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+    }
+}
